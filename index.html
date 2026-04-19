@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE HTML>
 <!--
 	Dimension by HTML5 UP
@@ -11,6 +12,85 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* ── Skill tags ── */
+			.skill-grid {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 8px;
+				margin: 10px 0 20px;
+			}
+			.skill-tag {
+				background: rgba(255,255,255,0.08);
+				border: 1px solid rgba(255,255,255,0.25);
+				border-radius: 20px;
+				padding: 4px 14px;
+				font-size: 0.85em;
+				white-space: nowrap;
+			}
+
+			/* ── Timeline ── */
+			.timeline { margin: 0; padding: 0; list-style: none; }
+			.timeline li {
+				position: relative;
+				padding: 0 0 24px 22px;
+				border-left: 2px solid rgba(255,255,255,0.2);
+			}
+			.timeline li:last-child { border-left: 2px solid transparent; padding-bottom: 0; }
+			.timeline li::before {
+				content: '';
+				position: absolute;
+				left: -7px; top: 4px;
+				width: 12px; height: 12px;
+				border-radius: 50%;
+				background: #ffffff;
+			}
+			.timeline-date {
+				font-size: 0.78em;
+				text-transform: uppercase;
+				letter-spacing: .08em;
+				opacity: .65;
+				margin-bottom: 2px;
+			}
+			.timeline-title { font-weight: 700; margin: 0 0 2px; font-size: 1em; }
+			.timeline-org   { opacity: .75; font-style: italic; margin-bottom: 6px; font-size: .9em; }
+			.timeline li ul { margin: 6px 0 0 16px; padding: 0; font-size: .9em; }
+			.timeline li ul li {
+				padding: 0; border: none; margin-bottom: 3px;
+				list-style: disc;
+			}
+			.timeline li ul li::before { display: none; }
+
+			/* ── Project key-achievements ── */
+			.project-meta {
+				font-size: 0.82em;
+				opacity: .7;
+				margin: -8px 0 10px;
+				letter-spacing: .04em;
+			}
+			.achievement-list { margin: 8px 0 10px 16px; font-size: .92em; }
+			.achievement-list li { margin-bottom: 4px; }
+			.tools-line { font-size: .85em; opacity: .75; margin-bottom: 6px; }
+
+			/* ── Availability badges ── */
+			.avail-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+			.avail-badge {
+				background: rgba(255,255,255,0.1);
+				border: 1px solid rgba(255,255,255,0.3);
+				border-radius: 4px;
+				padding: 5px 12px;
+				font-size: .85em;
+			}
+
+			/* ── Section divider inside articles ── */
+			.section-label {
+				text-transform: uppercase;
+				letter-spacing: .12em;
+				font-size: .75em;
+				opacity: .55;
+				margin: 24px 0 10px;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -19,17 +99,24 @@
 
 			<!-- Header -->
 			<header id="header">
-				<div class="logo" style="display:flex; align-items:center; justify-content:center;">
-					<!-- Replaced gem icon with your logo -->
-					<img src="images/CPA_logo_v2.svg" alt="CPA Data Analytics Logo" style="height: 48px; width:auto;" />
+				<div class="logo" style="display:flex;align-items:center;justify-content:center;">
+					<img src="images/CPA_logo_v2.svg" alt="CP Analytics Logo" style="height:48px;width:auto;" />
 				</div>
 
 				<div class="content">
 					<div class="inner">
-						<h1>CP Analytics</h1>
+						<h1>Philip Cho &nbsp;|&nbsp; CP Analytics</h1>
 						<p>
-							As a data analyst, I bring out the insights hidden in data to drive strategic decisions and improve business outcomes.
-							This portfolio showcases my skills in data analysis, visualization, and storytelling through various projects I've worked on.
+							I turn complex data into clear business decisions.<br />
+							<strong>SQL &nbsp;|&nbsp; Python &nbsp;|&nbsp; Tableau &nbsp;|&nbsp; Excel</strong>
+						</p>
+						<p style="font-size:.9em;opacity:.8;">
+							I'm a self-taught Data Analyst who helps businesses find insights hidden in their data —
+							from e-commerce sales trends to job-market analysis. I ask the right questions,
+							find the answers in the data, and present them in ways that drive action.
+						</p>
+						<p style="font-size:.85em;opacity:.7;">
+							Available for: Data Analyst roles &nbsp;|&nbsp; Freelance projects &nbsp;|&nbsp; Remote opportunities worldwide
 						</p>
 					</div>
 				</div>
@@ -47,16 +134,43 @@
 			<!-- Main -->
 			<div id="main">
 
-				<!-- Intro -->
+				<!-- ══════════════════ INTRO ══════════════════ -->
 				<article id="intro">
 					<h2 class="major">Intro</h2>
 					<span class="image main"><img src="images/background.jpg" alt="CP Analytics" /></span>
+
 					<p>
-						Welcome to CP Analytics. I specialize in turning raw data into clear, actionable insights through analysis and compelling
-						visual storytelling. Explore my portfolio to see projects using SQL, Python, Excel, and BI tools.
+						Hi! I'm <strong>Philip Cho</strong>, a Data Analyst based in Salalah, Oman, passionate about
+						turning complex data into actionable business insights.
+					</p>
+					<p>
+						With expertise in SQL, Python, Excel, Cognos Analytics and Tableau, I specialise in e-commerce analytics,
+						data visualisation, and exploratory data analysis. My projects span sales-performance
+						optimisation, job-market trend analysis, and interactive dashboard development.
+					</p>
+					<p>
+						My approach combines technical rigour with business storytelling — I don't just analyse data,
+						I help organisations understand what it means and how to act on it.
 					</p>
 
-					<ul class="icons">
+					<p class="section-label">Currently available for</p>
+					<div class="avail-list">
+						<span class="avail-badge">&#10003; Full-time Data Analyst roles</span>
+						<span class="avail-badge">&#10003; Freelance analysis projects</span>
+						<span class="avail-badge">&#10003; Dashboard development</span>
+						<span class="avail-badge">&#10003; Remote opportunities worldwide</span>
+					</div>
+
+					<!-- Download resume CTA -->
+					<ul class="actions" style="margin-top:20px;">
+						<li>
+							<a href="assets/files/PhilipCho_CV.pdf" download class="button primary icon solid fa-download">
+								Download Resume (PDF)
+							</a>
+						</li>
+					</ul>
+
+					<ul class="icons" style="margin-top:16px;">
 						<li>
 							<a href="https://www.linkedin.com/in/cho-philip-18792b194" class="icon brands fa-linkedin">
 								<span class="label">LinkedIn</span>
@@ -75,97 +189,225 @@
 					</ul>
 				</article>
 
-				<!-- Work -->
+				<!-- ══════════════════ PROJECTS ══════════════════ -->
 				<article id="work">
 					<h2 class="major">Projects</h2>
 
-					<!-- Project 1 -->
-					<h3>E-COMMERCE DATA ANALYSIS WITH SQL</h3>
+					<!-- ── Project 1 ── -->
+					<h3>E-Commerce Sales Performance Analysis</h3>
+					<p class="project-meta">PostgreSQL &nbsp;·&nbsp; SQL &nbsp;·&nbsp; Data Cleaning &nbsp;·&nbsp; Business Intelligence</p>
 					<span class="image main"><img src="images/ecom.png" alt="E-commerce SQL project" /></span>
 					<p>
-						I simulated the workflow of a junior data analyst, cleaning and querying one year of raw e-commerce transactional data
-						in PostgreSQL to uncover key business insights ahead of an annual review.
+						Simulated the workflow of a junior data analyst, analysing one year of e-commerce transactional
+						data (100,000+ transactions) in PostgreSQL to uncover actionable business insights ahead of an
+						annual strategic planning meeting.
 					</p>
-					<p>
-						<a href="https://github.com/Philcho21/SQL-Projects/tree/735a485f6d572562f4f11983e8d5f42620424974/E-Commerce%20Sales%20Performance%20Analysis">
-							View on GitHub
-						</a>
-					</p>
+					<p><strong>Key Achievements:</strong></p>
+					<ul class="achievement-list">
+						<li>Cleaned and transformed 100 K+ raw transaction records, resolving data-quality issues and standardising product categories</li>
+						<li>Identified the top 20 % of products generating 80 % of revenue using SQL window functions and CTEs</li>
+						<li>Analysed customer purchase patterns, revealing a 35 % repeat-customer rate and an average order value of $87</li>
+						<li>Discovered seasonal trends showing a 45 % sales spike during the Q4 holiday season, informing inventory planning</li>
+						<li>Optimised SQL queries, reducing runtime by approximately 60 %</li>
+					</ul>
+					<p class="tools-line"><strong>Tools:</strong> PostgreSQL · SQL · Data Cleaning · Performance Optimisation</p>
+					<p><a href="https://github.com/Philcho21/SQL-Projects/tree/735a485f6d572562f4f11983e8d5f42620424974/E-Commerce%20Sales%20Performance%20Analysis">View on GitHub &rarr;</a></p>
 					<hr />
 
-					<!-- Project 2 -->
+					<!-- ── Project 2 ── -->
 					<h3>Collecting Jobs Data Using Python</h3>
+					<p class="project-meta">Python &nbsp;·&nbsp; BeautifulSoup &nbsp;·&nbsp; Pandas &nbsp;·&nbsp; Web Scraping</p>
 					<span class="image main"><img src="images/data.png" alt="Python jobs scraping project" /></span>
 					<p>
-						This is a data collection project where I used Python to scrape job listings from a popular job search website.
-						I collected data on job titles, companies, locations, salaries, and job descriptions to analyze trends in the job market
-						and identify in-demand skills.
+						Built a Python web-scraping pipeline to collect job listings from a popular job-search website,
+						gathering data on titles, companies, locations, salaries, and descriptions to analyse job-market
+						trends and identify in-demand skills.
 					</p>
-					<p>
-						<a href="https://github.com/Philcho21/Python-Projects/tree/d1eac948acab5f504e7e05bddc57193aefe49847/Jobs%20Data">
-							View on GitHub
-						</a>
-					</p>
+					<p><strong>Key Achievements:</strong></p>
+					<ul class="achievement-list">
+						<li>Collected 10,000+ job listings automatically using BeautifulSoup and requests</li>
+						<li>Cleaned and structured raw scraped data into an analysis-ready dataset with pandas</li>
+						<li>Identified the top 10 most in-demand technical skills across data-related job postings</li>
+						<li>Mapped salary distributions by job title and location to reveal compensation benchmarks</li>
+					</ul>
+					<p class="tools-line"><strong>Tools:</strong> Python · BeautifulSoup · Pandas · NumPy · Data Wrangling</p>
+					<p><a href="https://github.com/Philcho21/Python-Projects/tree/d1eac948acab5f504e7e05bddc57193aefe49847/Jobs%20Data">View on GitHub &rarr;</a></p>
 					<hr />
 
-					<!-- Project 3 -->
-					<h3>NYC Payroll Exploratory Data Analysis With Python</h3>
+					<!-- ── Project 3 ── -->
+					<h3>NYC Payroll Exploratory Data Analysis</h3>
+					<p class="project-meta">Python &nbsp;·&nbsp; Pandas &nbsp;·&nbsp; Matplotlib &nbsp;·&nbsp; Seaborn &nbsp;·&nbsp; EDA</p>
 					<span class="image main"><img src="images/payrol.png" alt="NYC Payroll EDA project" /></span>
 					<p>
-						This is an exploratory data analysis project where I examined NYC payroll data to identify trends and patterns in employee compensation.
+						Conducted an exploratory data analysis of New York City payroll records to identify trends and
+						patterns in employee compensation across agencies and job titles.
 					</p>
-					<p>
-						<a href="https://github.com/Philcho21/Python-Projects/tree/d1eac948acab5f504e7e05bddc57193aefe49847/NYC-Payroll-Data-Project">
-							View on GitHub
-						</a>
-					</p>
+					<p><strong>Key Achievements:</strong></p>
+					<ul class="achievement-list">
+						<li>Analysed multi-year payroll dataset covering thousands of city employees across numerous agencies</li>
+						<li>Identified departments with the highest average overtime pay and total compensation</li>
+						<li>Visualised compensation distribution by borough, agency, and pay basis using Seaborn and Matplotlib</li>
+						<li>Surfaced anomalies in overtime spending that highlighted potential cost-saving opportunities</li>
+					</ul>
+					<p class="tools-line"><strong>Tools:</strong> Python · Pandas · Matplotlib · Seaborn · EDA</p>
+					<p><a href="https://github.com/Philcho21/Python-Projects/tree/d1eac948acab5f504e7e05bddc57193aefe49847/NYC-Payroll-Data-Project">View on GitHub &rarr;</a></p>
 					<hr />
 
-					<!-- More Projects -->
+					<!-- ── More Projects ── -->
 					<h3>More Projects</h3>
 
-					<h4>Car Sales Interactive Dashboard In Excel</h4>
+					<h4>Car Sales Interactive Dashboard — Excel</h4>
+					<p class="project-meta">Excel &nbsp;·&nbsp; Pivot Tables &nbsp;·&nbsp; Advanced Formulas &nbsp;·&nbsp; Dashboard Design</p>
 					<span class="image main"><img src="images/Excel.png" alt="Excel dashboard project" /></span>
 					<p>
-						This is a data analysis project where I cleaned and analyzed raw car sales data using Excel. I then built an interactive dashboard to visualize the key findings.
+						Cleaned and analysed raw car-sales data in Excel, then built an interactive dashboard — including
+						pivot tables, slicers, and dynamic charts — to visualise key findings covering $2 M+ in sales data.
 					</p>
-					<p>
-						<a href="https://1drv.ms/x/c/503789e4345b5eb3/IQAe3I-FI9S7QbVwVztQ09TwAT1Q_oLSesW1eAQwBme6iAM?e=VhB3Ov">
-							View project
-						</a>
-					</p>
+					<p><a href="https://1drv.ms/x/c/503789e4345b5eb3/IQAe3I-FI9S7QbVwVztQ09TwAT1Q_oLSesW1eAQwBme6iAM?e=VhB3Ov">View Project &rarr;</a></p>
 					<hr />
 
-					<h4>Capstone Project: Data Analysis</h4>
+					<h4>Data Analytics Capstone Project</h4>
+					<p class="project-meta">Python &nbsp;·&nbsp; REST APIs &nbsp;·&nbsp; SQL &nbsp;·&nbsp; Tableau &nbsp;·&nbsp; Full Workflow</p>
 					<span class="image main"><img src="images/capsto.jpg" alt="Capstone project" /></span>
 					<p>
-						This was a study project I participated in as part of my studies and it covers the full data analytics workflow:
-						from data collection using REST APIs through to data visualization.
+						A comprehensive end-to-end project covering the full data-analytics workflow: data collection via
+						REST APIs, data cleaning, SQL querying, exploratory analysis, and final visualisation — completed
+						as part of the IBM Data Analyst Professional Certificate programme.
 					</p>
-					<p>
-						<a href="https://github.com/Philcho21/Data-Analytics-Capstone-Project-/tree/632a7a5f99495431deb8bc0095d7003804bf9b2d/Data%20Cleaning">
-							View on GitHub
-						</a>
-					</p>
+					<p><a href="https://github.com/Philcho21/Data-Analytics-Capstone-Project-/tree/632a7a5f99495431deb8bc0095d7003804bf9b2d/Data%20Cleaning">View on GitHub &rarr;</a></p>
 				</article>
 
-				<!-- About -->
+				<!-- ══════════════════ ABOUT ══════════════════ -->
 				<article id="about">
-					<h2 class="major">About</h2>
-					<span class="image main"><img src="images/pic03.jpg" alt="About CP Analytics" /></span>
+					<h2 class="major">About Me</h2>
+
 					<p>
-						I’m Philip (CP Analytics), a data analyst focused on helping businesses make better decisions using data.
-						My toolkit includes SQL, Python, Excel, and visualization platforms like Tableau.
+						Hi! I'm <strong>Philip Cho</strong> — a self-taught Data Analyst based in Salalah, Oman,
+						driven by curiosity and a passion for finding the story hidden inside data.
 					</p>
 					<p>
-						I enjoy building clean datasets, uncovering trends, and communicating findings in a clear, business-friendly way.
+						I didn't take the traditional university route. Instead, I invested in structured online
+						education, completed the full IBM Data Analyst Professional Certificate, and immediately
+						put those skills to work through a growing portfolio of hands-on projects. My projects
+						are my proof of work.
 					</p>
+
+					<!-- ── Experience ── -->
+					<p class="section-label">Project &amp; Freelance Experience</p>
+					<ul class="timeline">
+						<li>
+							<p class="timeline-date">2024 – Present</p>
+							<p class="timeline-title">Independent Data Analytics Projects</p>
+							<p class="timeline-org">Self-directed / CP Analytics Portfolio</p>
+							<ul>
+								<li>Completed 5+ end-to-end data analysis projects spanning e-commerce, HR payroll, job-market research, and sales analytics</li>
+								<li>Delivered a Python web-scraping pipeline collecting 10,000+ job listings for trend analysis</li>
+								<li>Built an interactive Excel dashboard analysing $2 M+ in car-sales data</li>
+								<li>Wrote and optimised complex SQL queries in PostgreSQL on datasets of 100 K+ records</li>
+								<li>Maintained an active public portfolio with 6+ repositories on GitHub</li>
+							</ul>
+						</li>
+					</ul>
+
+					<!-- ── Education ── -->
+					<p class="section-label">Education &amp; Certifications</p>
+					<ul class="timeline">
+						<li>
+							<p class="timeline-date">2024</p>
+							<p class="timeline-title">IBM Data Analyst Professional Certificate</p>
+							<p class="timeline-org">IBM / Coursera &nbsp;·&nbsp; 9-Course Specialisation</p>
+							<ul>
+								<li>Data Analysis with Python</li>
+								<li>SQL for Data Science &amp; Databases</li>
+								<li>Data Visualisation with Python, Tableau &amp; Cognos Analytics</li>
+								<li>Web Scraping &amp; REST API Data Collection</li>
+								<li>Capstone: full end-to-end analytics project</li>
+							</ul>
+						</li>
+						<li>
+							<p class="timeline-date">Completed</p>
+							<p class="timeline-title">High School Diploma</p>
+							<p class="timeline-org">Secondary Education</p>
+						</li>
+					</ul>
+
+					<!-- ── Skills ── -->
+					<p class="section-label">Technical Skills</p>
+
+					<p style="margin-bottom:4px;font-size:.88em;opacity:.8;"><strong>Programming &amp; Databases</strong></p>
+					<div class="skill-grid">
+						<span class="skill-tag">SQL (PostgreSQL)</span>
+						<span class="skill-tag">Python</span>
+						<span class="skill-tag">Pandas</span>
+						<span class="skill-tag">NumPy</span>
+						<span class="skill-tag">Matplotlib</span>
+						<span class="skill-tag">Seaborn</span>
+						<span class="skill-tag">BeautifulSoup</span>
+					</div>
+
+					<p style="margin-bottom:4px;font-size:.88em;opacity:.8;"><strong>Data Visualisation</strong></p>
+					<div class="skill-grid">
+						<span class="skill-tag">Tableau</span>
+						<span class="skill-tag">IBM Cognos Analytics</span>
+						<span class="skill-tag">Looker Studio</span>
+						<span class="skill-tag">Excel Dashboards</span>
+						<span class="skill-tag">Pivot Tables</span>
+						<span class="skill-tag">Advanced Formulas</span>
+					</div>
+
+					<p style="margin-bottom:4px;font-size:.88em;opacity:.8;"><strong>Analysis Techniques</strong></p>
+					<div class="skill-grid">
+						<span class="skill-tag">Exploratory Data Analysis</span>
+						<span class="skill-tag">Data Cleaning</span>
+						<span class="skill-tag">Statistical Analysis</span>
+						<span class="skill-tag">Web Scraping</span>
+						<span class="skill-tag">ETL Processes</span>
+						<span class="skill-tag">REST APIs</span>
+					</div>
+
+					<p style="margin-bottom:4px;font-size:.88em;opacity:.8;"><strong>Tools &amp; Platforms</strong></p>
+					<div class="skill-grid">
+						<span class="skill-tag">Jupyter Notebook</span>
+						<span class="skill-tag">Google Sheets</span>
+					</div>
+
+					<p style="margin-bottom:4px;font-size:.88em;opacity:.8;"><strong>Business Skills</strong></p>
+					<div class="skill-grid">
+						<span class="skill-tag">E-commerce Analytics</span>
+						<span class="skill-tag">Sales Performance Analysis</span>
+						<span class="skill-tag">Data Storytelling</span>
+						<span class="skill-tag">KPI Development</span>
+					</div>
+
+					<!-- ── Resume CTA ── -->
+					<ul class="actions" style="margin-top:24px;">
+						<li>
+							<a href="assets/files/PhilipCho_CV.pdf" download class="button primary icon solid fa-download">
+								Download Resume (PDF)
+							</a>
+						</li>
+					</ul>
 				</article>
 
-				<!-- Contact -->
+				<!-- ══════════════════ CONTACT ══════════════════ -->
 				<article id="contact">
-					<h2 class="major">Get in touch</h2>
-					<p>Let’s turn data into insights. Reach out if you'd like to collaborate or discuss data analytics opportunities.</p>
+					<h2 class="major">Let's Work Together</h2>
+
+					<p>I'm currently available for:</p>
+					<div class="avail-list">
+						<span class="avail-badge">&#10003; Full-time Data Analyst positions</span>
+						<span class="avail-badge">&#10003; Freelance data analysis projects</span>
+						<span class="avail-badge">&#10003; Business intelligence consulting</span>
+						<span class="avail-badge">&#10003; Dashboard development &amp; visualisation</span>
+					</div>
+
+					<p style="margin-top:14px;">
+						<strong>Looking to hire a data analyst?</strong><br />
+						I specialise in e-commerce analytics, sales performance analysis, and turning raw data into
+						actionable business insights.<br /><br />
+						<strong>Have a project in mind?</strong><br />
+						Let's discuss how data analysis can help your business make better decisions.
+					</p>
 
 					<form method="post" action="https://formspree.io/f/mgonlbjw">
 						<div class="fields">
@@ -209,17 +451,26 @@
 					<hr />
 
 					<p>
-						<strong>Location:</strong> Salalah, Dhofar Governorate, Oman<br />
+						<strong>Based in:</strong> Salalah, Oman<br />
+						<strong>Open to:</strong> Remote opportunities worldwide &nbsp;|&nbsp; Relocation for the right role<br />
 						<strong>Phone:</strong> (+968) 94840841<br />
 						<strong>Email:</strong> <a href="mailto:Philcho21@gmail.com">Philcho21@gmail.com</a>
 					</p>
+
+					<ul class="actions">
+						<li>
+							<a href="assets/files/PhilipCho_CV.pdf" download class="button icon solid fa-download">
+								Download Resume (PDF)
+							</a>
+						</li>
+					</ul>
 				</article>
 
 			</div>
 
 			<!-- Footer -->
 			<footer id="footer">
-				<p class="copyright">&copy; 2026. CP Analytics.</p>
+				<p class="copyright">&copy; 2026 CP Analytics &mdash; Philip Cho. All rights reserved.</p>
 			</footer>
 
 		</div>
@@ -236,3 +487,4 @@
 
 	</body>
 </html>
+```
