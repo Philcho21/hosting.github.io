@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE HTML>
 <!--
 	Dimension by HTML5 UP
@@ -215,26 +214,6 @@
 					<hr />
 
 					<!-- ── Project 2 ── -->
-					<h3>Collecting Jobs Data Using Python</h3>
-					<p class="project-meta">Python &nbsp;·&nbsp; BeautifulSoup &nbsp;·&nbsp; Pandas &nbsp;·&nbsp; Web Scraping</p>
-					<span class="image main"><img src="images/data.png" alt="Python jobs scraping project" /></span>
-					<p>
-						Built a Python web-scraping pipeline to collect job listings from a popular job-search website,
-						gathering data on titles, companies, locations, salaries, and descriptions to analyse job-market
-						trends and identify in-demand skills.
-					</p>
-					<p><strong>Key Achievements:</strong></p>
-					<ul class="achievement-list">
-						<li>Collected 10,000+ job listings automatically using BeautifulSoup and requests</li>
-						<li>Cleaned and structured raw scraped data into an analysis-ready dataset with pandas</li>
-						<li>Identified the top 10 most in-demand technical skills across data-related job postings</li>
-						<li>Mapped salary distributions by job title and location to reveal compensation benchmarks</li>
-					</ul>
-					<p class="tools-line"><strong>Tools:</strong> Python · BeautifulSoup · Pandas · NumPy · Data Wrangling</p>
-					<p><a href="https://github.com/Philcho21/Python-Projects/tree/d1eac948acab5f504e7e05bddc57193aefe49847/Jobs%20Data">View on GitHub &rarr;</a></p>
-					<hr />
-
-					<!-- ── Project 3 ── -->
 					<h3>NYC Payroll Exploratory Data Analysis</h3>
 					<p class="project-meta">Python &nbsp;·&nbsp; Pandas &nbsp;·&nbsp; Matplotlib &nbsp;·&nbsp; Seaborn &nbsp;·&nbsp; EDA</p>
 					<span class="image main"><img src="images/payrol.png" alt="NYC Payroll EDA project" /></span>
@@ -251,6 +230,28 @@
 					</ul>
 					<p class="tools-line"><strong>Tools:</strong> Python · Pandas · Matplotlib · Seaborn · EDA</p>
 					<p><a href="https://github.com/Philcho21/Python-Projects/tree/d1eac948acab5f504e7e05bddc57193aefe49847/NYC-Payroll-Data-Project">View on GitHub &rarr;</a></p>
+					<hr />
+
+					<!-- ── Project 4 ── -->
+					<h3>Recruitment Data Collection &amp; Transformation Pipeline</h3>
+					<p class="project-meta">Python &nbsp;·&nbsp; REST APIs &nbsp;·&nbsp; Web Scraping &nbsp;·&nbsp; Pandas &nbsp;·&nbsp; Generative AI &nbsp;·&nbsp; Data Wrangling</p>
+					<span class="image main"><img src="images/data.png" alt="Recruitment data collection project" /></span>
+					<p>
+						Used Generative AI to build a multi-source recruitment data collection system in Python that scrapes live job postings
+						from five job boards across 16 countries via REST APIs, then transforms and enriches the raw data
+						using NLP techniques — producing a clean, structured dataset ready for analysis.
+					</p>
+					<p><strong>Key Achievements:</strong></p>
+					<ul class="achievement-list">
+						<li>Integrated five live job board APIs (Reed, Adzuna, The Muse, Remotive, Arbeitnow) with a rotating user-agent pool, polite request delays, and automatic retry logic to collect job postings reliably across 16 countries.</li>
+						<li>Built a 12-hour recurring scheduler with graceful shutdown handling, enabling unattended continuous data collection without manual intervention.</li>
+						<li>Implemented a multi-layer deduplication system — combining exact-match, job ID, MD5 semantic fingerprinting, and URL-based strategies — to eliminate cross-source duplicate postings before transformation.</li>
+						<li>Parsed and normalised raw salary strings (ranges, daily rates, shorthand like "£40k") into consistent annual figures, and standardised relative date formats (e.g. "3 days ago") into ISO dates across all sources.</li>
+						<li>Applied Generative AI techniques for natural language processing and structured data extraction from unstructured job descriptions.</li>
+						<li>Delivered a clean 31-column enriched dataset as CSV, JSON, and a compressed TF-IDF sparse matrix — fully ready for downstream salary benchmarking and skills gap analysis.</li>
+					</ul>
+					<p class="tools-line"><strong>Tools:</strong> Python · requests · BeautifulSoup · REST APIs · Pandas · Generative AI · Jupyter Notebook</p>
+					<p><a href="https://github.com/Philcho21">View on GitHub &rarr;</a></p>
 					<hr />
 
 					<!-- ── More Projects ── -->
@@ -282,14 +283,19 @@
 					<h2 class="major">About Me</h2>
 
 					<p>
-						Hi! I'm <strong>Philip Cho</strong> — a self-taught Data Analyst based in Salalah, Oman,
-						driven by curiosity and a passion for finding the story hidden inside data.
+						Hi! I'm <strong>Philip Cho</strong>, a Data Analyst with a strong foundation in computer science and a passion for transforming data into meaningful insights. Based in Salalah, Oman, I am driven by curiosity, continuous learning, and the challenge of uncovering the stories hidden within data.
 					</p>
+
 					<p>
-						I didn't take the traditional university route. Instead, I invested in structured online
-						education, completed the full IBM Data Analyst Professional Certificate, and immediately
-						put those skills to work through a growing portfolio of hands-on projects. My projects
-						are my proof of work.
+						After completing my high school education, I pursued a Bachelor of Science (B.Sc.) in Computer Science at the University of Bamenda, where I developed a solid understanding of technology, problem-solving, and analytical thinking.
+					</p>
+
+					<p>
+						To further strengthen my expertise in data analytics, I earned the IBM Data Analyst Professional Certificate through Coursera. This specialization provided hands-on experience with industry-standard tools, data visualization, statistical analysis, and data-driven decision-making.
+					</p>
+
+					<p>
+						Since then, I have worked on a diverse range of projects involving both real-world and simulated datasets. These experiences have allowed me to broaden my technical knowledge, sharpen my analytical skills, and gain valuable practical experience in extracting insights, solving business problems, and communicating findings effectively. Each project has contributed to my growth as a data professional and reflects my commitment to continuous improvement and excellence.
 					</p>
 
 					<!-- ── Experience ── -->
@@ -310,7 +316,30 @@
 					</ul>
 
 					<!-- ── Education ── -->
-					<p class="section-label">Education &amp; Certifications</p>
+					<p class="section-label">Education</p>
+					<ul class="timeline">
+						<li>
+							<p class="timeline-date">2017</p>
+							<p class="timeline-title">Bachelor of Science (B.Sc.) in Computer Science</p>
+							<p class="timeline-org">University of Bamenda</p>
+							<ul>
+								<li>Completed undergraduate studies in Computer Science.</li>
+								<li>Developed strong foundations in programming, databases, systems analysis, and problem-solving.</li>
+								<li>Built analytical and technical skills that support my work in data analytics.</li>
+							</ul>
+						</li>
+						<li>
+							<p class="timeline-date">Completed</p>
+							<p class="timeline-title">High School Diploma</p>
+							<p class="timeline-org">Secondary Education</p>
+							<ul>
+								<li>Completed secondary school education, building a foundation in mathematics and sciences.</li>
+							</ul>
+						</li>
+					</ul>
+
+					<!-- ── Certifications ── -->
+					<p class="section-label">Certifications</p>
 					<ul class="timeline">
 						<li>
 							<p class="timeline-date">2024</p>
@@ -325,9 +354,13 @@
 							</ul>
 						</li>
 						<li>
-							<p class="timeline-date">Completed</p>
-							<p class="timeline-title">High School Diploma</p>
-							<p class="timeline-org">Secondary Education</p>
+							<p class="timeline-date">July 2025</p>
+							<p class="timeline-title">IELTS Academic</p>
+							<p class="timeline-org">International English Language Testing System (IELTS)</p>
+							<ul>
+								<li>Achieved an Overall Band Score of 7.0.</li>
+								<li>Demonstrated proficiency in English communication across listening, reading, writing, and speaking.</li>
+							</ul>
 						</li>
 					</ul>
 
@@ -487,4 +520,3 @@
 
 	</body>
 </html>
-```
