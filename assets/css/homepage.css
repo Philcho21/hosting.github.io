@@ -22,7 +22,7 @@ body { margin: 0; }
     #cp-homepage .cp-site * { box-sizing: border-box; }
     #cp-homepage .cp-site a { color: inherit; }
     #cp-homepage .cp-site a:focus-visible { outline: 3px solid var(--cp-accent); outline-offset: 4px; }
-    #cp-homepage .cp-header, #cp-homepage main, #cp-homepage .cp-footer { width: min(100%, 1320px); margin-inline: auto; }
+    #cp-homepage .cp-header, #cp-homepage main, #cp-homepage .cp-footer { width: min(100%, 1080px); margin-inline: auto; }
     #cp-homepage .cp-header { min-height: 72px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--cp-line); }
     #cp-homepage .cp-brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
     #cp-homepage .cp-mark { width: 38px; height: 38px; display: grid; place-items: center; color: var(--cp-accent-ink); background: var(--cp-accent); font-weight: 800; letter-spacing: -.08em; border-radius: 9px; }
