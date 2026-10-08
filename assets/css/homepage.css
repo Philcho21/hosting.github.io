@@ -59,6 +59,8 @@ body { margin: 0; }
     #cp-homepage .cp-findings span { color: var(--cp-muted); font-size: 10px; }
     #cp-homepage .cp-text-link { display: inline-flex; align-items: center; gap: 7px; color: var(--cp-accent) !important; font-size: 11px; font-weight: 700; text-decoration: none; }
     #cp-homepage .cp-text-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+    #cp-homepage main { display: block; }
+    #cp-homepage .cp-section, #cp-homepage .cp-capabilities, #cp-homepage .cp-about, #cp-homepage .cp-contact { width: 100%; max-width: none; }
     #cp-homepage .cp-section { padding: 40px 0 54px; border-top: 1px solid var(--cp-line); }
     #cp-homepage .cp-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 22px; }
     #cp-homepage .cp-section-heading .cp-eyebrow { margin-bottom: 6px; }
